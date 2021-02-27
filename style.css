@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -88,6 +92,11 @@ body {
     line-height: 60px;
 
     text-decoration: none;
+    transition: linear 0.2s;
+}
+
+.navigation__ul a:hover {
+    text-decoration: underline;
 }
 
 .navigation__ul li:last-child a{
@@ -99,6 +108,7 @@ body {
 }
 
 .navigation__ul li:last-child a:hover {
+    text-decoration: none;
     background-color: #CD6326;
     border: 2px solid #CD6326;
 }
@@ -271,6 +281,8 @@ body {
 
     padding: 21px 0 21px 10px;
     width: 35%;
+
+    box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.25);
 }
 
 .latest-articles__btn {
@@ -286,4 +298,103 @@ body {
     padding: 22.1px 34px;
 
     transition: linear 0.2s;
+}
+
+/*Footter*/
+
+.footer {
+    background-image: url(./images/Footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 150px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    margin-left: 15px;
+
+    color: #F7F7F7;
+
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+
+    text-transform: uppercase;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.footer__ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer__ul li {
+    margin-left: 85px;
+}
+
+.footer__ul li:first-child {
+    margin-left: 0;
+}
+
+.footer__ul a {
+    color: #F7F7F7;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 60px;
+
+    text-decoration: none;
+    transition: linear 0.2s;
+}
+
+.footer__ul a:hover {
+    text-decoration: underline;
+}
+
+.footer__social li {
+    margin-left: 27px;
+}
+
+.footer__social li:first-child {
+    margin-left: 0;
+}
+
+.footer__social a {
+    position: relative;
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+
+    background-color: #F7F7F7;
+    border-radius: 50%;
+
+    transition: linear 0.2s;
+}
+
+.footer__social img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.footer__social a:hover {
+    background-color: #E39128;
 }
