@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -16,24 +21,27 @@ body {
     margin: auto;
 }
 
-/*Header*/
+/*Intro*/
 
-header {
+.intro {
     background-image: url(./images/fox-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding: 20px 0 240px;
 }
+
+/*Header*/
 
 .header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding-top: 20px;
 }
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo__text {
@@ -84,16 +92,65 @@ header {
     transition: linear 0.2s;
 }
 
-.navigation__ul li:last-child a:hover {
-    background-color: #CD6326;
-}
-
 .navigation__ul li:last-child a:visited {
     background-color: #8F5613;
     border: 2px solid #8F5613;
 }
 
+.navigation__ul li:last-child a:hover {
+    background-color: #CD6326;
+    border: 2px solid #CD6326;
+}
+
 /*Survival*/
 
+.survival {
+    padding: 120px 0;
+}
+
+.survival__inner {
+    width: 25%;
+}
+
+.survival__title {
+    color: #CD6326;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.survival__undertitle {
+    color: #F7F7F7;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+
+    margin: 50px 0 68px;
+}
+
+.survival__btn {
+    padding: 16px 42px;
+
+    background-color: #CD6326;
+    border-radius: 5px;
+
+    color: #F7F7F7;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: linear 0.2s;
+}
+
+.survival__btn:visited {
+    background-color: #8F5613;
+}
+
+.survival__btn:hover {
+    background-color: #E39128;
+}
 
 
