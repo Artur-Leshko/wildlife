@@ -11,10 +11,89 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
 
-/*Head*/
+/*Header*/
+
+header {
+    background-image: url(./images/fox-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__text {
+    margin-left: 15px;
+
+    color: #F7F7F7;
+
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+
+    text-transform: uppercase;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.navigation__ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation__ul li {
+    margin-left: 60px;
+}
+
+.navigation__ul li:first-child {
+    margin-left: 0px;
+}
+
+.navigation__ul a {
+    color: #F7F7F7;
+
+    font-size: 23px;
+    font-weight: 400;
+
+    line-height: 60px;
+
+    text-decoration: none;
+}
+
+.navigation__ul li:last-child a{
+    padding: 10px 23px;
+    border: 2px solid #CD6326;
+    border-radius: 5px;
+
+    transition: linear 0.2s;
+}
+
+.navigation__ul li:last-child a:hover {
+    background-color: #CD6326;
+}
+
+.navigation__ul li:last-child a:visited {
+    background-color: #8F5613;
+    border: 2px solid #8F5613;
+}
+
+/*Survival*/
+
 
 
