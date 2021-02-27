@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -20,6 +21,11 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+
+.btn:hover {
+    background-color: #E39128;
+}
+
 
 /*Intro*/
 
@@ -31,7 +37,7 @@ body {
     padding: 20px 0 240px;
 }
 
-/*Header*/
+/*Intro Header*/
 
 .header__inner {
     display: flex;
@@ -92,17 +98,12 @@ body {
     transition: linear 0.2s;
 }
 
-.navigation__ul li:last-child a:visited {
-    background-color: #8F5613;
-    border: 2px solid #8F5613;
-}
-
 .navigation__ul li:last-child a:hover {
     background-color: #CD6326;
     border: 2px solid #CD6326;
 }
 
-/*Survival*/
+/*Intro Survival*/
 
 .survival {
     padding: 120px 0;
@@ -145,12 +146,144 @@ body {
     transition: linear 0.2s;
 }
 
-.survival__btn:visited {
-    background-color: #8F5613;
+/*Latest-aricles*/
+
+/*Latest-aricles top*/
+
+.latest-articles {
+    padding: 120px 0 240px;
+
+    background-color: #CCCCCC;
+    text-align: center;
 }
 
-.survival__btn:hover {
-    background-color: #E39128;
+.latest-articles__title {
+    color: #333333;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
 }
 
+.latest-articles__undertitle {
+    color: #666666;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
 
+    margin: 20px 0 120px;
+}
+
+/*Latest-aricles Cards*/
+
+.latest-articles__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards__arrow {
+    width: 29.7px;
+    height: 29.7px;
+    transform: rotate(45deg);
+}
+
+.arrow--left {
+    border-bottom: 7px solid #666666;
+    border-left: 7px solid #666666;
+}
+
+.arrow--right {
+    border-top: 7px solid #666666;
+    border-right: 7px solid #666666;
+}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 25%;
+    height: 360px;
+    padding-bottom: 40px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards__item:nth-child(2) {
+    background-image: url(./images/Deer.jpg);
+}
+
+.cards__item:nth-child(3) {
+    background-image: url(./images/Squirrel.jpg);
+}
+
+.cards__item:nth-child(4){
+    background-image: url(./images/Bird.jpg);
+}
+
+.item__title {
+    color: #F7F7F7;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+}
+
+.item__undertitle {
+    color: #F7F7F7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/*Latest-aricles Form*/
+
+.latest-articles__notified {
+    color: #333333;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40.5px;
+
+    margin-top: 240px;
+    margin-bottom: 60px;
+}
+
+.latest-articles__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-articles__input {
+    color: #666666;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26.95px;
+
+    background-color: transparent;
+    border: 1px solid #666666;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 21px 0 21px 10px;
+    width: 35%;
+}
+
+.latest-articles__btn {
+    color: #F7F7F7;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    text-decoration: none;
+
+    background-color: #CD6326;
+    border-radius: 0 5px 5px 0;
+
+    padding: 22.1px 34px;
+
+    transition: linear 0.2s;
+}
